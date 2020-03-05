@@ -269,6 +269,17 @@
 								</div>
 								
 							</div><!-- p-item -->
+				<div class="p-item web-design portfolio-column">
+								<img src="images/hp.png" alt="">
+								<div class="portfolio-hover">
+									<div class="portfolio-content">
+										<h2>Harvest Point Ministries </h2>
+										<p>Uk Church </p>
+									</div>
+									<div class="portfolio-overlay"></div>
+								</div>
+								
+							</div><!-- p-item -->
 
 				<div class="p-item web-design portfolio-column">
 						<img src="images/Screenshot_5.png" alt="">
@@ -476,51 +487,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div> -->
 	  
 	<!-- SCIPTS -->
-	<script src="common-js/jquery-3.2.1.min.js"></script>
+	<script src="/common-js/jquery-3.2.1.min.js"></script>
 	
-	<script src="common-js/tether.min.js"></script>
+	<script src="/common-js/tether.min.js"></script>
 	
-	<script src="common-js/bootstrap.js"></script>
+	<script src="/common-js/bootstrap.js"></script>
 	
-	<script src="common-js/isotope.pkgd.min.js"></script>
+	<script src="/common-js/isotope.pkgd.min.js"></script>
 	
-	<script src="common-js/jquery.waypoints.min.js"></script>
+	<script src="/common-js/jquery.waypoints.min.js"></script>
 	
-	<script src="common-js/scripts.js"></script>
-	<script>
-		function wiget(w){
-			$('#wigetvalue').val(w);
-			if(w > 0)
-			$('.modal-title').text('HIRE ME'); 
-		   else
-           $('.modal-title').text('GET CV');
-
-		   if($('#wigetvalue').val() !== w)
-		   $('#form').show(); $('#cvnotify').hide();
-		}
-		function cvnotify(){
-			
-			var inputMail = $('#email1').val();
-			var text = $('#wigetvalue').val();
-			$('#error').text('');
-			var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-				if(inputMail.match(mailformat))
-				{
-				document.form1.email1.focus();
-				//return true;
-				//send form
-				$("#load").load( "sendcv.php?to="+inputMail+'&e='+text);
-				$('#form').hide(); $('#cvnotify').show();
-				}
-				else
-				{
-				$('#error').text("You have entered an invalid email address!");
-				document.form1.email1.focus();
-				return false;
-				}
-		}
-
-</script>
+	<script src="/common-js/scripts.js"></script>
+	
 
 
 </body>
